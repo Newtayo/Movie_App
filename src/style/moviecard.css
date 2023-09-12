@@ -1,0 +1,20 @@
+.movie-card{
+    position: relative;
+    width: 25vw;
+    border: 2px solid red;
+}
+.movie-poster{
+    width: 25vw;
+}
+.favorite{
+    position: absolute;   
+    z-index: 1;
+    top: 3%;
+    left: 80%;
+    color: white;
+    border-radius: 60%;
+    background-color:rgb(202, 208, 212);
+    border: none;
+    padding: 1.5%;
+
+}
