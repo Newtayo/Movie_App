@@ -1,7 +1,10 @@
 .movie-card{
     position: relative;
     width: 25vw;
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
 }
 .movie-poster{
     width: 25vw;
@@ -17,4 +20,23 @@
     border: none;
     padding: 1.5%;
 
+}
+
+.movie-card >h3{
+    margin: 0;
+    padding: 0;
+}
+.movie-card >h4{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .movie-card{
+        width: 90%;
+        margin: auto;
+    }
+    .movie-poster{
+        width: 100%;
+    }
 }
