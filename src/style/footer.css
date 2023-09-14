@@ -1,0 +1,32 @@
+.social-media{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.icons > p{
+    white-space: nowrap;
+ }
+
+ @media only screen and (max-width: 600px) {
+    .icon{
+        width: 60%;
+    }
+    .icons{
+        width: 80%;
+    }
+    .icons > p{
+        font-size: 3vw;
+     }
+}
