@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Home from './component/Home'
-import MovieDetail from './component/movieDetail'
+import MovieDetail from './component/MovieDetails'
 import { useDispatch } from 'react-redux'
 import { fetchMovie } from './redux/movie/movieSlice'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
