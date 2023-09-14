@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './component/Home'
+import MovieDetail from './component/movieDetail'
 import { useDispatch } from 'react-redux'
 import { fetchMovie } from './redux/movie/movieSlice'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const dispatch = useDispatch()
@@ -13,9 +13,16 @@ function App() {
   }, [dispatch])
 
   return (
+    <Router>
     <div className='container'>
-      <Home/>
-    </div>
+    <Routes>
+          <Route path="/" element={ <Home/>} exact />
+          <Route path="/movies/:id" element={<MovieDetail />} exact />
+
+        </Routes>
+     
+      </div>
+      </Router>
   )
 }
 

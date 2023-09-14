@@ -1,0 +1,47 @@
+.movie-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-backdrop{
+    width: 52vw;
+    border-radius: 20px;
+    margin: 2% auto;
+}
+.movie-overview{
+    width: 50vw;
+    text-align: justify;
+}
+
+.movie-banner{
+    width: 50vw;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .movie-details{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .movie-backdrop{
+        width: 80%;
+        border-radius: 20px;
+        margin: 2% auto;
+    }
+    .movie-banner{
+        width: 90%;
+        text-align: left;
+        margin-top: 4%;
+    }
+    .movie-overview{
+        width: 90%;
+        text-align: justify;
+        line-height: 1.6;
+
+    }
+
+}

@@ -21,6 +21,18 @@
     padding: 1.5%;
 
 }
+.pressed{
+    position: absolute;   
+    z-index: 1;
+    top: 3%;
+    left: 80%;
+    color: red;
+    border-radius: 60%;
+    background-color:rgb(202, 208, 212);
+    border: none;
+    padding: 1.5%;
+
+}
 
 .movie-card >h3{
     margin: 0;
@@ -30,7 +42,13 @@
     margin: 0;
     padding: 0;
 }
-
+.movie-link{
+    text-decoration: none;
+    color: black;
+}
+.movie-link :hover{
+   text-decoration: underline;
+}
 @media only screen and (max-width: 600px) {
     .movie-card{
         width: 90%;

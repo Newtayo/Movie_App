@@ -9,6 +9,9 @@ header{
     margin-top: 1%;
     display: flex;
     margin-left: 30%;
+    position: absolute;
+    top: 5%;
+    display: flex;
 }
 .logo{
     margin-top: 1%;
@@ -25,14 +28,17 @@ header{
     background-color: transparent;
     border: 2px solid white;
     width: 30vw;
-    padding: 1%;
+    padding: 2%;
     color: white;
+   
+
 }
 .searchbtn{
     background-color: transparent;
     margin-left: -8%;
     color: white;
     font-size: 1.5vw;
+    justify-self: flex-end;
     border: none;
 
 
@@ -78,8 +84,11 @@ header{
     .article-container{
         display: none;
     }
+    .search-form{ 
+        width: 80%;
+    }
     .search{
-        width: 100%;
+        width: 80%;
         margin-left: -20%;
         padding: 3%;
     }

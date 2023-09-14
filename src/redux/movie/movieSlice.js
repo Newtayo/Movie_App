@@ -7,9 +7,12 @@ const credentials = {
     }
   };
 const url = 'https://api.themoviedb.org/3/movie/top_rated'
+const base = 'https://api.themoviedb.org/3/movie/'
+const api = '?api_key=08308db6063691e089e1c6c2933ee507'
 
 const initialState = {
     movieList : [],
+    details: [],
     isLoading: false,
     error: null,
     success: false,
@@ -26,6 +29,17 @@ export const fetchMovie = createAsyncThunk('movieList/get', async() => {
           return error;
         }
     });
+    export const movieDetail = createAsyncThunk('moviedetails/get', async(id) =>{
+        try {
+            const response = await axios.get(`${base}${id}${api}`);
+            return response.data;
+          }   catch (error) {
+            if (AxiosError.isAxiosError(error) && !error.response) {
+                throw new Error('Network error occurred. Please check your internet connection.');
+              }
+              return error;
+            }
+    })
 
     const movieSlice = createSlice({
         name: 'movie',
@@ -64,7 +78,30 @@ export const fetchMovie = createAsyncThunk('movieList/get', async() => {
                 ...state,
                 isLoading: false,
                 error: action.payload,
-              }));
+              }))
+              .addCase(movieDetail.pending, (state) => ({
+                ...state,
+                isLoading: true,
+                success: false,
+            }))
+            .addCase(movieDetail.fulfilled, (state, action) => {
+                const detail = action.payload;
+                console.log(detail)
+                
+                return {
+                    ...state,
+                    details : detail,
+                    isLoading: false,
+                    success: true,
+                }
+            })
+            .addCase(movieDetail.rejected, (state, action) => ({
+                ...state,
+                isLoading: false,
+                error: action.payload,
+              }))
+              
+              
         }
     })
 
