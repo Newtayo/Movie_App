@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import logo from '../assets/logo.svg'
+import logo from '../assets/Logo.svg'
 
 import { useState } from 'react';
 
