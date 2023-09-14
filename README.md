@@ -1,4 +1,4 @@
-# Global Population App
+# Movieonthego App
 
 <a name="readme-top"></a>
 
@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Global Population App] <a name="about-project"></a>
+# 📖 [Movieonthego App] <a name="about-project"></a>
 
-**[Space travelers hub project]** This is a SPA web application that provides information of various countries. The web application fetches application from restcountries API. It is also a responsive web application. 
+**[Movieonthego App]** This is a SPA web application that provides infomation on the top rated movies on the TMDB API. It provides basic information such has the movie title, the release date, the runtime e.tc. The web application also allows users to select their favorite movies and provides an option for searching for movies 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,8 +50,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Provide information on the Global Population]**
-- **[Access Information of a particular country by clicking on the country card]**
+- **[Provide Basic informationa about various movies]**
+- **[Access Information of a particular movie by clicking on the movie card]**
+- **[Allows User to search for movies]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,13 +60,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [See live here](https://countriespopulation.onrender.com)
+- [See live here](https://movieonthego.onrender.com/)
 
-## 🚀 Video Demonstration <a name="live-demo"></a>
-
-- [See Video here](https://www.loom.com/share/5a9a810ad5664976a751875e9edcf7e3)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -86,13 +82,13 @@ setup Linters
 Clone this repository to your desired folder:
 
 ```sh
-  cd metric-webapp
-  git clone https://github.com/Newtayo/metric-webapp
+  cd movie_app
+  git clone https://github.com/Newtayo/movie_app
 ```
 ### Install
  
  ```sh
- cd metric-webapp
+ cd movie_app
  ```
  ```sh
  npm install
@@ -131,10 +127,10 @@ npx stylelint "**/*.{css,scss}"
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 
-👤 **Author1**
+👤 **Author**
  *[Newtayo Omotayo Akande]*
  
 - GitHub: [@githubhandle](https://github.com/Newtayo)
@@ -145,7 +141,7 @@ npx stylelint "**/*.{css,scss}"
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-    #[Implement voice search of countries]
+    #[Implement the Sidebar functionality]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +149,7 @@ npx stylelint "**/*.{css,scss}"
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-   - [Issues](https://github.com/Newtayo/metric-webapp/issues)
+   - [Issues](https://github.com/Newtayo/movie_app/issues)
   
     
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -169,16 +165,11 @@ If you like this project please show support by staring ⭐️.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-* I would love to acknowledge Nelson Sakwa on Behance who inspired the design of this web application.
 
-* I would also like to acknowledge Microverse for providing this platform to support learning.
+* I would also like to acknowledge HNG Team for providing this platform to for me to showcase my skills.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Newtayo/metric-webapp/commit/8e8df21421cb31da07e6eef9f6c6ad699412e723) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
