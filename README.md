@@ -125,7 +125,6 @@ npx stylelint "**/*.{css,scss}"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
 
@@ -138,7 +137,6 @@ npx stylelint "**/*.{css,scss}"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
     #[Implement the Sidebar functionality]
